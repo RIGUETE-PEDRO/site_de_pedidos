@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Faça seu login<span class="dot">.</span></h1>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha">
+                </div>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <button type="button" class="login-button" onclick="window.location.href='../../trabalho/loja.html';">Entrar</button>
+                <a href="cadastro/cadastro.html" class="create-account">Ainda não tenho uma conta</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para recuperação de senha -->
+    <div id="reset-password-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Recuperação de Senha</h2>
+            <div id="step-email">
+                <p>Insira seu e-mail para recuperar a senha:</p>
+                <input type="email" id="reset-email" placeholder="Email">
+                <button onclick="sendResetCode()">Enviar código</button>
+            </div>
+            <div id="step-code" style="display: none;">
+                <p>Insira o código enviado para seu e-mail:</p>
+                <input type="text" id="reset-code" placeholder="Código de verificação">
+                <button onclick="verifyCode()">Verificar código</button>
+            </div>
+            <div id="step-new-password" style="display: none;">
+                <p>Insira sua nova senha:</p>
+                <input type="password" id="new-password" placeholder="Nova senha">
+                <button onclick="resetPassword()">Redefinir senha</button>
+            </div>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

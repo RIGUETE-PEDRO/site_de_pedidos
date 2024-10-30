@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pedido</title>
+    <link rel="stylesheet" href="loja.css">
+    <script src="loja.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <p>Usuário: Ricardo</p>
+        <ul>
+            
+            <li>Balcão</li>
+            <li>Comanda</li>
+            <li>Delivery</li>
+            <li>Caixa</li>
+            <li>Operações de caixa</li>
+            <li>Clientes</li>
+            <li>Relatórios</li>
+            <li>Configurações</li>
+            <li>Sair</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Passo 1: Escolha uma Categoria</h2>
+        <div class="categories">
+            <button>Pizza</button>
+            <button>Café</button>
+            <button>Pizzas Grandes</button>
+            <button>Pizzas Médias</button>
+            <button>Refrigerantes</button>
+            <button>Lanche</button>
+        </div>
+        <h2>Passo 2: Escolha um Item</h2>
+        <div class="items">
+            <button onclick="addItem('X-Salada', 28)">
+                <span>X-Salada</span>
+                <span>R$28,00</span>
+            </button>
+            <button onclick="addItem('X-Bacon', 12)">
+                <span>X-Bacon</span>
+                <span>R$12,00</span>
+            </button>
+            <button onclick="addItem('X-Calabresa', 19)">
+                <span>X-Calabresa</span>
+                <span>R$19,00</span>
+            </button>
+            <button onclick="addItem('X-Strogonoff', 22)">
+                <span>X-Strogonoff</span>
+                <span>R$22,00</span>
+            </button>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </div>
+    <div class="cart">
+        <h3>Carrinho</h3>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">Total a pagar: R$<span id="total-price">0.00</span></div>
+        <div class="pay-button">PAGAR</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

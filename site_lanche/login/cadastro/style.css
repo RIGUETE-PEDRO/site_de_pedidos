@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414; /* Fundo escuro semelhante */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-box {
+    background: #1a1a1a; /* Caixa de fundo escura */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    text-align: left;
+    width: 400px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h1 .dot {
+    color: #f34e9b; /* Cor rosa no ponto final */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f34e9b, #f69435); /* Gradiente rosa-laranja */
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+    background: linear-gradient(90deg, #f69435, #f34e9b); /* Inversão de gradiente no hover */
+}
+
+.login-link {
+    color: #777;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
